@@ -16,17 +16,15 @@ app.get("/campgrounds", function(req, res) {
     {
       name: "Warriors Way",
       image:
-        "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&epi=search_campgrounds&url=https://stock.adobe.com/images/camping-green-tent-in-forest-near-lake/189909341?as_channel=affiliate&as_campaign=pexels&as_source=arvato"
+        "https://authentic-scandinavia.com/system/images/tours/photos/130/thumbnail.jpg"
     },
     {
       name: "Earthy",
-      image:
-        "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&epi=search_campgrounds&url=https://stock.adobe.com/images/boy-setting-up-the-tent-at-campsite/231213779?as_channel=affiliate&as_campaign=pexels&as_source=arvato"
+      image: ""
     },
     {
       name: "AR Camp",
-      image:
-        "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&epi=search_campgrounds&url=https://stock.adobe.com/images/camping-and-tent-in-nature-park-with-sunrise/252558973?as_channel=affiliate&as_campaign=pexels&as_source=arvato"
+      image: ""
     }
   ];
   //campgrounds is the data we're passing in and the data we want to call it
