@@ -16,15 +16,17 @@ app.get("/campgrounds", function(req, res) {
     {
       name: "Warriors Way",
       image:
-        "https://authentic-scandinavia.com/system/images/tours/photos/130/thumbnail.jpg"
+        "https://pixabay.com/get/57e8d1454b56ae14f6da8c7dda793f7f1636dfe2564c704c722c72d7954ac759_340.jpg"
     },
     {
       name: "Earthy",
-      image: ""
+      image:
+        "https://pixabay.com/get/52e5d7414355ac14f6da8c7dda793f7f1636dfe2564c704c722c72d7954ac759_340.jpg"
     },
     {
       name: "AR Camp",
-      image: ""
+      image:
+        "https://pixabay.com/get/57e1d14a4e52ae14f6da8c7dda793f7f1636dfe2564c704c722c72d7954ac759_340.jpg"
     }
   ];
   //campgrounds is the data we're passing in and the data we want to call it
