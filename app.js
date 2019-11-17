@@ -14,12 +14,12 @@ app.get("/", function(req, res) {
 app.get("/campgrounds", function(req, res) {
   const campgrounds = [
     {
-      name: "Warriors Way",
+      name: "Earthy",
       image:
         "https://pixabay.com/get/57e8d1454b56ae14f6da8c7dda793f7f1636dfe2564c704c722c72d7954ac759_340.jpg"
     },
     {
-      name: "Earthy",
+      name: "Warrirors Way",
       image:
         "https://pixabay.com/get/52e5d7414355ac14f6da8c7dda793f7f1636dfe2564c704c722c72d7954ac759_340.jpg"
     },
@@ -33,6 +33,12 @@ app.get("/campgrounds", function(req, res) {
   // we can call it whatever we want
   //common to see them named the same thing
   res.render("campgrounds", { campgrounds: campgrounds });
+});
+
+app.post("/campgrounds", function(req, res) {
+  //get data from form and add to campgrounds array
+  res.send("YOU HIT THE POST ROUTE");
+  //redirect back to campgrounds page
 });
 
 app.listen(PORT, function() {
