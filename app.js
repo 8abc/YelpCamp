@@ -14,17 +14,17 @@ var campgrounds = [
   {
     name: "Earthy",
     image:
-      "https://www.photosforclass.com/download/pixabay-1846142?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2F57e8d1454b56ae14f6da8c7dda793f7f1636dfe2564c704c722b7bd6944cc258_960.jpg&user=Pexels"
+      "https://st4.depositphotos.com/thumbs/2922775/image/22763/227633784/api_thumb_450.jpg"
   },
   {
     name: "Warrirors Way",
     image:
-      "https://www.photosforclass.com/download/pixabay-4522970?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2F52e5d7414355ac14f6da8c7dda793f7f1636dfe2564c704c722b7bd6944cc258_960.jpg&user=Ben_Frieden"
+      "https://st2.depositphotos.com/thumbs/3806485/image/6262/62628733/api_thumb_450.jpg"
   },
   {
     name: "AR Camp",
     image:
-      "https://www.photosforclass.com/download/pixabay-1149402?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2F57e1d14a4e52ae14f6da8c7dda793f7f1636dfe2564c704c722b7bd6944cc258_960.jpg&user=Free-Photos"
+      "https://st.depositphotos.com/thumbs/1217458/image/1404/14040685/api_thumb_450.jpg"
   }
 ];
 
