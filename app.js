@@ -1,14 +1,57 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-//initializing express app
-const app = express();
-const PORT = 8080;
+const express = require("express"),
+  app = express(),
+  bodyParser = require("body-parser"),
+  mongoose = require("mongoose"),
+  PORT = 8080;
+
+//create yelpcamp db inside mongdb
+mongoose.connect("mongodb://localhost/yelpcamp", {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true
+});
 
 //needed for body-parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //sets up the templates in views
 app.set("view engine", "ejs");
+
+const Campground = mongoose.model(
+  "Campground",
+  { name: String },
+  {
+    image: String
+  }
+);
+
+// const camp = new Campground({ name: "Fire" });
+// camp.save().then(() => console.log("wild"));
+
+//SCHEME SETUP
+const campgroundSchema = new mongoose.Schema({
+  name: String,
+  image: String
+});
+
+//compile into model
+// const Campground = mongoose.model("Campground", campgroundSchema);
+
+Campground.create(
+  {
+    name: "Earthy",
+    image:
+      "https://st4.depositphotos.com/thumbs/2922775/image/22763/227633784/api_thumb_450.jpg"
+  },
+  function(err, campground) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("NEWLY CREATE CAMPGROUND");
+      console.log(campground);
+    }
+  }
+);
 
 var campgrounds = [
   {
